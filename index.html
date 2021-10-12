@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOLHA DE PONTO</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="utils.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="center">
+			<div id="form">
+				<label for="quantity">shift start:</label>
+				<input type="field" name="" placeholder="example: 17:00" id="workStart"><br/>
+	  			<label for="quantity">time worked:</label>
+				<input type="field" id="timeWorked" name="quantity" value="6"><label for="quantity"> hours</label><br/>
+				<input type="checkbox" id="dayOff" name="dayOff"><label for="dayOff"> day off</label><br/>
+				<input type="button" name="" value="submit" onclick="submit()">
+			</div>
+
+			<table id="folhadeponto">
+				<tr>
+					<th>shift start</th>
+					<th>interval start</th>
+					<th>interval end</th>
+					<th>shift end</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
